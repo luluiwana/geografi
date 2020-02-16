@@ -92,17 +92,17 @@
 						Letak Wilayah Indonesia
 						</a>
 					</li>
-                    <li><a class="submenu">Luas dan Batas Wilayah Indonesia</a></li>
-                    <li><a class="submenu" >Bentuk Wilayah Indonesia</a></li>
+                    <li><a href="<?php echo base_url('home/luasbatas')?>" class="submenu">Luas dan Batas Wilayah Indonesia</a></li>
+                    <li><a href="<?php echo base_url('home/bentukwilayah')?>" class="submenu" >Bentuk Wilayah Indonesia</a></li>
                 </ul>
             </li>
             <li>
-                <a class="" href="widgets.html">
+                <a class="" href="<?php echo base_url('home/perairan')?>" >
                     <img src="<?php echo base_url('img/icon-perairan.png')?>" class="ikon-sidebar" />
                     <span class="side">Perairan Laut Indonesia</span>
                 </a>
             </li>            <li>
-                <a class="" href="widgets.html">
+                <a class="" href="<?php echo base_url('home/transportasi')?>" >
                     <img src="<?php echo base_url('img/icon-transportasi.png')?>" class="ikon-sidebar" />
                     <span class="side">Sistem Transportasi Laut Indonesia</span>
                 </a>

@@ -29,4 +29,24 @@ class Home extends CI_Controller {
 		$this->load->view('header');
 		$this->load->view('letakwilayah');
 	}
+	public function luasbatas()
+	{
+		$this->load->view('header');
+		$this->load->view('luasbatas');
+	}
+		public function bentukwilayah()
+	{
+		$this->load->view('header');
+		$this->load->view('bentukwilayah');
+	}
+			public function perairan()
+	{
+		$this->load->view('header');
+		$this->load->view('perairan');
+	}
+			public function transportasi()
+	{
+		$this->load->view('header');
+		$this->load->view('transportasi');
+	}
 }
