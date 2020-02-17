@@ -4,9 +4,14 @@
 .h3{
 	font-weight:bold;
 }
+.deskripsi{
+	font-size:15px;
+	text-align:justify;
+}
+
 </style>
 
-<body style="background-color: #b7dde8;">
+<body>
   <!-- container section start -->
   <section id="container" >
     <!--main content start-->
@@ -16,8 +21,33 @@
   <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
       <h3>LETAK ASTRONOMIS INDONESIA</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div class="deskripsi">
+	<div id="">  <span class="label label-primary" style="18px">6&#176; LU - 11&#176; LS dan 95&#176; BT - 141&#176; BT</span>
+	    <br>
+	    <br>
+	
+	   <img src="<?php echo base_url('img/zona-waktu.png')?>" class="img-responsive img-thumbnail" style="width:100%"><br>
+
+
+	  <br>
+	  Jarak bujurnya adalah 46&#176; sekitar 5000 km. Perbedaan garis bujur dan panjang wilayah dari barat ke timur  menyebabkan adanya perbedaan waktu.
+Panjang garis lintang membentang 17&#176; sekitar 1887 km. Lokasi lintang paling utara di Pulau We dan lintang paling selatan di Pulau Rote.
+<br>
+<br>
+<div id="">Menyebabkan Indonesia beriklim tropis antara 23,5o LU dan 23,5o LS. Intensitas penyinaran matahari tinggi.
+</div>
+<div id="">Curah hujan yang tinggi (700 mm -7000 mm) pertahun.
+</div>
+<div  id="">Mempengaruhi proses erosi, sedimentasi, pelapukan batuan dan pembentukan tanah lebih intensif
+</div>
+<div  id="">Keanekaragaman flora dan fauna.
+</div>
+</div>
+
+</div>
     </div>
+	
+	
     <div id="menu1" class="tab-pane fade">
       <h3>LETAK GEOGRAFIS INDONESIA </h3>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>

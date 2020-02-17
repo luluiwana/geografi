@@ -319,10 +319,10 @@ img {
   border-radius: 50%;
 }
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border: 0;
-  border-top: 1px solid #f7f7f7;
+  border-top: 1px solid #000;
 }
 .sr-only {
   position: absolute;
@@ -4182,7 +4182,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .label {
   display: inline;
   padding: .2em .6em .3em;
-  font-size: 75%;
+  font-size: 100%;
   font-weight: bold;
   line-height: 1;
   color: #ffffff;
