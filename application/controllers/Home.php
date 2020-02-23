@@ -1,7 +1,8 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class Home extends CI_Controller
+{
 
 	/**
 	 * Index Page for this controller.
@@ -22,7 +23,6 @@ class Home extends CI_Controller {
 	{
 		$this->load->view('header');
 		$this->load->view('home');
-		
 	}
 	public function letakwilayah()
 	{
@@ -34,17 +34,17 @@ class Home extends CI_Controller {
 		$this->load->view('header');
 		$this->load->view('luasbatas');
 	}
-		public function bentukwilayah()
+	public function bentukwilayah()
 	{
 		$this->load->view('header');
 		$this->load->view('bentukwilayah');
 	}
-			public function perairan()
+	public function perairan()
 	{
 		$this->load->view('header');
 		$this->load->view('perairan');
 	}
-			public function transportasi()
+	public function transportasi()
 	{
 		$this->load->view('header');
 		$this->load->view('transportasi');
@@ -53,5 +53,16 @@ class Home extends CI_Controller {
 	{
 		$this->load->view('header');
 		$this->load->view('potensilaut');
+	}
+	public function transportasilaut()
+
+	{
+		$this->load->view('header');
+		$this->load->view('sistemtransport');
+	}
+	public function tollaut()
+	{
+		$this->load->view('header');
+		$this->load->view('tol_laut');
 	}
 }
