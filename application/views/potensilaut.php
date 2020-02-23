@@ -33,33 +33,25 @@
             <section class="wrapper">
                <div class="tab-content">
                   <div id="home" class="tab-pane fade in active ">
-                     <h3>LETAK ASTRONOMIS INDONESIA</h3>
+                     <h3>POTENSI LAUT INDONESIA</h3>
                      <div class="deskripsi" panel>
-                        <span class="label label-primary" style="18px">6&#176; LU - 11&#176; LS dan 95&#176; BT - 141&#176; BT</span>
+                        
                         <br>
-                        <br>
-                        <div class="col-md-9" id=""> <img src="<?php echo base_url('img/zona-waktu.png')?>" class="img-responsive img-thumbnail" style="width:100%">
+                        <div class="col-md-9" id=""> <img src="<?php echo base_url('img/potensi-laut.png')?>" class="img-responsive img-thumbnail" style="width:100%">
                            <br>
                         </div>
                         <br>
                         <div class="col-md-3" id="">
                            <table class="table">
                               <tr align="left" valign="top">
-                                 <td><img src="<?php echo base_url('img/sun.png')?>" alt="" border="0" width="30" height="" /></td>
-                                 <td>Menyebabkan Indonesia beriklim tropis antara 23,5&#176; LU dan 23,5&#176; LS. Intensitas penyinaran matahari tinggi.</td>
+                                
+                                 <td>Posisi Indonesia yang strategis dan terletak di garis khatulistiwa merupakan pertemuan arus laut yang panas dan dingin menyebabkan Indonesia mempunyai keanekaragaman sumber daya kelautan baik hayati maupun non-hayati.</td>
                               </tr>
                               <tr align="left" valign="top">
-                                 <td><img src="<?php echo base_url('img/cloud.png')?>" alt="" border="0" width="30" height="" /></td>
-                                 <td>Curah hujan yang tinggi (700 mm -7000 mm) pertahun.</td>
+                                 
+                                 <td>Terdapat 18 wilayah ekoregion laut di Indonesia, pembagian ini didasarkan oleh kesamaan karakteristik SDA, ekosistem,kondisi geografis, budaya masyarakat setempat, dan kearifan lokal.</td>
                               </tr>
-                              <tr align="left" valign="top">
-                                 <td><img src="<?php echo base_url('img/mountain.png')?>" alt="" border="0" width="30" height="" /></td>
-                                 <td>Mempengaruhi proses erosi, sedimentasi, pelapukan batuan dan pembentukan tanah lebih intensif</td>
-                              </tr>
-                              <tr align="left" valign="top">
-                                 <td><img src="<?php echo base_url('img/tree.png')?>" alt="" border="0" width="30" height="" /></td>
-                                 <td>Keanekaragaman flora dan fauna.</td>
-                              </tr>
+                              
                            </table>
                         </div>
                      </div>
@@ -67,43 +59,43 @@
                   <div id="menu1" class="tab-pane fade">
                      <h3>LETAK GEOGRAFIS INDONESIA </h3>
                      <br>
-                     <div class="col-md-9" id=""> <img src="<?php echo base_url('img/letak-geografis.jpg')?>" class="img-responsive img-thumbnail" style="width:100%">
+                     <div class="col-md-12" id=""> <img src="<?php echo base_url('img/perikanan.png')?>" class="img-responsive img-thumbnail" style="width:100%"><br/>
                         <br>
                      </div>
-                     <div class="col-md-3" id="">
-                        <ul class="list-group">
-                           <li class="list-group-item">Berada di Kawasan Asia Tenggara </li>
-                           <li class="list-group-item">Letak Geografis, berada di antara Benua Asia dan Benua Australia serta di antara Samudera Hindia dan Samudera Pasifik</li>
-                           <li class="list-group-item">Indonesia memiliki 17 ribu pulau dan Panjang pesisir 108.000 km</li>
-                        </ul>
+                     <div class="row" id="">
+                        <div class="col-md-6" id=""><p>Penyebaran daerah penangkapan ikan di Indonesia mencapai luas sekitar 5,4 juta km2. Data Podes 2018 menunjukkan bahwa 21,82% penduduk yang tinggal di desa tepi laut sumber penghasilan utamanya dari subsektor perikanan. Selain potensi perikanan tangkap, juga memiliki potensi perikanan budidaya laut pada tahun 2015 seluas 12.123.383 hektar (Kelautan dan Perikanan Dalam Angka, 2016). Tercatat hasil perikanan Indonesia menyumbang 7,4% (81,6 juta ton) dari total penangkapan ikan di dunia. Indonesia merupakan negara yang memproduksi perikanan tangkap tertinggi kedua di dunia pada perairan laut (FAO, 2016).
+Berdasarkan keputusan Menteri Kelautan dan Perikanan RI, No. 47/ KEPMEN/ 2016 bahwa potensi lestari sumber daya ikan Indonesia mencapai 9,9 juta ton yang tersebar di 11 WPP-NRI.
+</p></div>
+<div class="col-md-6" id=""><p>Potensi tersebut terdiri atas ikan pelagis kecil 3,52 juta ton; ikan pelagis besar 2,49 juta ton; ikan demersal 2,32 juta ton; ikan karang 977 ribu ton; udang penaid 327 ribu ton; lobster 8,8 ribu ton; rajungan 47,8 ribu ton; dan cumi-cumi 197 ribu ton. Sedangkan potensi perikanan budidaya laut mempunyaibeberapa jenis komoditas yakni budidaya rumput laut, udang, berbagai jenis ikan kerapu, kakap, bandeng dan sebagainya.</p></div>
+                     </div>
+					  <div class="col-md-12" id=""> <img src="<?php echo base_url('img/tabel-perikanan.png')?>" class="img-responsive img-thumbnail" style="width:100%"><br/>
+                        <br>
                      </div>
                   </div>
                   <div id="menu2" class="tab-pane fade">
-                     <h3>LETAK GEOLOGIS INDONESIA </h3>
-                     <div class="col-md-9" id=""> <img src="<?php echo base_url('img/letak-geologis.jpg')?>" class="img-responsive img-thumbnail" style="width:100%">
-                        <br>
+                     <h3>POTENSI TUMBUHAN LAUT </h3>
+                     <div class="col-md-12" id=""> 
+					 <div class="label label-primary">Rumput Laut</div><br/><br/>
+					 <p>Selain kelompok hewan, laut Indonesia menghasilkan tumbuhan laut yang memiliki nilai gizi dan ekonomi. Salah satu produk yang diketahui manfaatnya adalah makro-algae atau biasa disebut rumput laut. Rumput laut di Indonesia sangat melimpah yaitu sekitar 8,6% dari total biota laut.Luas wilayah habitat rumput laut di Indonesia merupakan terbesar di dunia mencapai luas 1,2 juta Ha. Berdasarkan ekspedisi Van Bosse di Laut Siboga tahun 1899-1900 bahwa Indonesia memiliki 6,42% atau sekitar 555 jenis dari 8.642 spesies rumput laut di dunia. Rumput laut dari kelas:
+					 <ol>
+	<li>Alga merah (Rhodophyceae) terbanyak sekitar 452 jenis</li>
+	<li>Alga hijau (Chlorophyceae) sekitar 196 jenis</li>
+	<li>Alga cokelat (Phaeophyceae) sekitar 134 jenis.</li>
+</ol>
+					 </p>
+					 <p>Data FAO (2015) menunjukan bahwa total produksi rumput laut dunia tahun 2013 mencapai 26,98 juta ton basah, Indonesia menyumbang 34,47 persen dari produksi tersebut sekitar 9,30 juta ton basah.</p>
+					 <p>Data UN-Comtrade (2015) tercatat bahwa pada tahun 2014 volume ekspor rumput laut kering dunia mencapai 169,64 ribu ton dan Indonesia menyumbang 70,01 persen dari total volume ekspor dunia tersebut. Berdasarkan data hasil ekspor dan impor Badan Karantina Ikan Pengendalian Mutu dan Keamanan Hasil Perikanan (BKIPM-KHP), sebagai berikut:
+					 <a href="http://bkipm.kkp.go.id/bkipmnew/?r=stats/#_ops_volume/E,I/Kg/d/1/2020/0/kd_upt">Data</a>
+
+</p><p>Pasar utama komoditas rumput laut kering dunia adalah China (55,42 %), Jepang (14,04 %), Korea (6,11 %), France (4,70 %) dan USA (3,06 %).</p>
                      </div>
-                     <div class="col-md-3" id="">
-                        <p>Indonesia merupakan tempat pertemuan tiga lempeng tektonik yaitu lempeng Lempeng Eurasia, Indo-Australia, dan Pasifik.  Menyebabkan Indonesia dilalui oleh dua jalur pegunungan muda dunia.
-                        <ol>
-                           <li>Pegunungan Mediterania di barat </li>
-                           <li>Pegunungan Sirkum Pasifik di timur. </li>
-                        </ol>
-                        </p>
-                        <table class="table">
-                           <tr align="left" valign="top">
-                              <td><img src="<?php echo base_url('img/geologis-map.png')?>" style="width:40px;"></td>
-                              <td>Terdiri atas dua buah daratan luas yaitu Dangkalan Sunda dan Dangkalan Sahul</td>
-                           </tr>
-                           <tr align="left" valign="top">
-                              <td><img src="<?php echo base_url('img/geologis-mountain.png')?>" style="width:40px;"></td>
-                              <td>Indonesia berbentuk kepulauan mempunyai beberapa jalur pegunungan berisikan vulkan aktif 70 buah, istirahat 115 buah dan tidak aktif 400 buah.</td>
-                           </tr>
-                        </table>
-                     </div>
+					 <div class="col-md-12" id="">
+					 <div class="label label-primary">Terumbu Karang</div><br/><br/>
+					 </div>
+                     
                   </div>
                   <div id="menu3" class="tab-pane fade">
-                     <h3>LETAK SOSIAL- EKONOMI INDONESIA</h3>
+                     <h3>Lsde</h3>
                      <div class="row" id="">
                         <div class="col-md-6" id="">
                            <table class="table">
@@ -169,9 +161,9 @@
                <br/>
                <div class="row" id="">
                   <ul class="nav nav-tabs nav-justified"  style="position:floated; bottom:0;">
-                     <li class="active"><a data-toggle="tab" href="#home"><img class="img-responsive" src="<?php echo base_url('img/circle-yellow.png')?>" alt="" border="0"  width="20" height="" style="margin: 0 auto;" /><br>Letak Astronomis</a></li>
-                     <li><a data-toggle="tab" href="#menu1"><img class="img-responsive" src="<?php echo base_url('img/circle-green.png')?>" alt="" border="0"  width="20" height="" style="margin: 0 auto;" /><br>Letak Geografis</a></li>
-                     <li><a data-toggle="tab" href="#menu2"><img class="img-responsive" src="<?php echo base_url('img/circle-red.png')?>" alt="" border="0"  width="20" height="" style="margin: 0 auto;" /><br>Letak Geologis</a></li>
+                     <li class="active"><a data-toggle="tab" href="#home"><img class="img-responsive" src="<?php echo base_url('img/circle-yellow.png')?>" alt="" border="0"  width="20" height="" style="margin: 0 auto;" /><br>Potensi Laut Indonesia</a></li>
+                     <li><a data-toggle="tab" href="#menu1"><img class="img-responsive" src="<?php echo base_url('img/circle-green.png')?>" alt="" border="0"  width="20" height="" style="margin: 0 auto;" /><br>	Potensi Perikanan Indonesia</a></li>
+                     <li><a data-toggle="tab" href="#menu2"><img class="img-responsive" src="<?php echo base_url('img/circle-red.png')?>" alt="" border="0"  width="20" height="" style="margin: 0 auto;" /><br>Potensi Tumbuhan Laut</a></li>
                      <li><a data-toggle="tab" href="#menu3"><img class="img-responsive" src="<?php echo base_url('img/circle-blue.png')?>" alt="" border="0"  width="20" height="" style="margin: 0 auto;" /><br>Letak Sosial-Ekonomi</a></li>
                      <li><a data-toggle="tab" href="#menu4"><img class="img-responsive" src="<?php echo base_url('img/circle-grey.png')?>" alt="" border="0"  width="20" height="" style="margin: 0 auto;" /><br>Letak Budaya</a></li>
                   </ul>

@@ -49,4 +49,9 @@ class Home extends CI_Controller {
 		$this->load->view('header');
 		$this->load->view('transportasi');
 	}
+	public function potensilaut()
+	{
+		$this->load->view('header');
+		$this->load->view('potensilaut');
+	}
 }

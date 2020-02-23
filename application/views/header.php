@@ -96,12 +96,23 @@
                     <li><a href="<?php echo base_url('home/bentukwilayah')?>" class="submenu" >Bentuk Wilayah Indonesia</a></li>
                 </ul>
             </li>
-            <li>
-                <a class="" href="<?php echo base_url('home/perairan')?>" >
+			<li class="sub-menu" >
+                <a href="javascript:;" class="">
                     <img src="<?php echo base_url('img/icon-perairan.png')?>" class="ikon-sidebar" />
-                    <span class="side">Perairan Laut Indonesia</span>
+                    <span class="side">Perairan Laut</span>
+                    <span class="menu-arrow arrow_carrot-right"></span>
                 </a>
-            </li>            <li>
+                <ul class="submenu">
+                    <li>
+						<a href="<?php echo base_url('home/perairan')?>"  class="submenu"  >
+						Perairan Laut Indonesia
+						</a>
+					</li>
+                    <li><a href="<?php echo base_url('home/potensilaut')?>" class="submenu">Potensi Laut Indonesia</a></li>
+                    
+                </ul>
+            </li>
+			<li>
                 <a class="" href="<?php echo base_url('home/transportasi')?>" >
                     <img src="<?php echo base_url('img/icon-transportasi.png')?>" class="ikon-sidebar" />
                     <span class="side">Sistem Transportasi Laut Indonesia</span>
