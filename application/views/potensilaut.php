@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
+   
 <style>
    .h3 {
       font-weight: bold;
@@ -76,7 +76,7 @@
       minZoom: 1,
       maxZoom: 6,
       center: [0, 0],
-      zoom: 2,
+      zoom: 4,
       crs: L.CRS.Simple
     });
 
@@ -117,7 +117,157 @@
                         <p>Potensi tersebut terdiri atas ikan pelagis kecil 3,52 juta ton; ikan pelagis besar 2,49 juta ton; ikan demersal 2,32 juta ton; ikan karang 977 ribu ton; udang penaid 327 ribu ton; lobster 8,8 ribu ton; rajungan 47,8 ribu ton; dan cumi-cumi 197 ribu ton. Sedangkan potensi perikanan budidaya laut mempunyaibeberapa jenis komoditas yakni budidaya rumput laut, udang, berbagai jenis ikan kerapu, kakap, bandeng dan sebagainya.</p>
                      </div>
                   </div>
-                  <div class="col-md-12" id=""> <img src="<?php echo base_url('img/tabel-perikanan.png') ?>" class="img-responsive img-thumbnail" style="width:100%"><br />
+                  <div class="col-md-12" id=""> 
+				  <table class="table table-hover table-striped table-bordered">
+<tbody>
+<tr>
+<th   rowspan="2">Jenis Ikan/ Type of fish</th>
+<th   colspan="11">Wilayah Pengelolaan Perikanan Negara Republik Indonesia (WPPNRI) / Fish Management Areaof the Republic of Indonesia</th>
+
+</tr>
+<tr>
+<th  >WPP-NRI 571</th>
+<th  >WPP-NRI 572</th>
+<th  >WPP-NRI 573</th>
+<th  >WPP-NRI 711</th>
+<th  >WPP-NRI 712</th>
+<th  >WPP-NRI 713</th>
+<th  >WPP-NRI 714</th>
+<th  >WPP-NRI 715</th>
+<th  >WPP-NRI 716</th>
+<th  >WPP-NRI 717</th>
+<th  >WPP-NRI 718</th>
+</tr>
+<tr>
+<td  >Ikan Pelagis Kecil</td>
+<td  >79.0</td>
+<td  >413.0</td>
+<td  >294.1</td>
+<td  >395.5</td>
+<td  >303.9</td>
+<td  >104.6</td>
+<td  >116.5</td>
+<td  >378.7</td>
+<td  >222,9</td>
+<td  >391.1</td>
+<td  >823.3</td>
+</tr>
+<tr>
+<td  >Ikan Pelagis Besar</td>
+<td  >102.0</td>
+<td  >364.8</td>
+<td  >505.9</td>
+<td  >199.0</td>
+<td  >104.0</td>
+<td  >419.3</td>
+<td  >43.1</td>
+<td  >51.4</td>
+<td  >154.3</td>
+<td  >56.1</td>
+<td  >489.8</td>
+</tr>
+<tr>
+<td  >Ikan Demersal</td>
+<td  >102.8</td>
+<td  >366.1</td>
+<td  >103.5</td>
+<td  >400.5</td>
+<td  >320.4</td>
+<td  >77.2</td>
+<td  >99.8</td>
+<td  >114.0</td>
+<td  >34.7</td>
+<td  >111.6</td>
+<td  >586.3</td>
+</tr>
+<tr>
+<td  >Ikan Karang</td>
+<td  >119.8</td>
+<td  >48.1</td>
+<td  >8.8</td>
+<td  >24.3</td>
+<td  >59.1</td>
+<td  >365.4</td>
+<td  >164.2</td>
+<td  >70.0</td>
+<td  >54.2</td>
+<td  >32.4</td>
+<td  >30.5</td>
+</tr>
+<tr>
+<td  >Udang Penaeid</td>
+<td  >58.9</td>
+<td  >8.2</td>
+<td  >6.9</td>
+<td  >78.0</td>
+<td  >58.4</td>
+<td  >37.3</td>
+<td  >2.2</td>
+<td  >6.1</td>
+<td  >8.5</td>
+<td  >8.7</td>
+<td  >53.5</td>
+</tr>
+<tr>
+<td  >Lobster</td>
+<td  >0.7</td>
+<td  >1.3</td>
+<td  >0.8</td>
+<td  >1.0</td>
+<td  >1.0</td>
+<td  >1.0</td>
+<td  >0.1</td>
+<td  >0.7</td>
+<td  >0.7</td>
+<td  >1.1</td>
+<td  >0.4</td>
+</tr>
+<tr>
+<td  >Kepiting</td>
+<td  >11.1</td>
+<td  >11.6</td>
+<td  >0.5</td>
+<td  >0.5</td>
+<td  >10.1</td>
+<td  >5.0</td>
+<td  >1.1</td>
+<td  >0.5</td>
+<td  >2.0</td>
+<td  >0.6</td>
+<td  >1.5</td>
+</tr>
+<tr>
+<td  >Rajungan</td>
+<td  >3.1</td>
+<td  >0.9</td>
+<td  >0.7</td>
+<td  >9.4</td>
+<td  >22.6</td>
+<td  >6.7</td>
+<td  >2.2</td>
+<td  >0.6</td>
+<td  >0.4</td>
+<td  >0.0</td>
+<td  >1.9</td>
+</tr>
+<tr>
+<td  >Cumi-cumi</td>
+<td  >7.1</td>
+<td  >14.6</td>
+<td  >8.2</td>
+<td  >35.2</td>
+<td  >102.1</td>
+<td  >10.0</td>
+<td  >1.8</td>
+<td  >9.7</td>
+<td  >1.1</td>
+<td  >2.1</td>
+<td  >5.5</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+				  <br />
                      <br>
                   </div>
               </div>
