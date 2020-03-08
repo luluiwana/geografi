@@ -47,8 +47,8 @@
                         3 jalur pelayaran internasional lainnya berada di Terusan Suez di Mesir, Terusan Panama di benua Amerika, dan Selat Gibraltar di antara Spanyol dan Maroko
                     </p>
                     <div class="row">
-                        <div class="col-md-7 text-center">
-                            <img src="<?php echo base_url('img/transport.png') ?>" class="img-responsive img-thumbnail" />
+                        <div id='baru' class="col-md-7 text-center" style="height:500px">
+                            <!-- <img src="<?php echo base_url('img/transport.png') ?>" class="img-responsive img-thumbnail" /> -->
                         </div>
                         <div class="col-md-5">
                             <ul>
@@ -79,3 +79,41 @@
 </body>
 
 </html>
+
+<script>
+    // Using leaflet.js to pan and zoom a big image.
+    // See also: http://kempe.net/blog/2014/06/14/leaflet-pan-zoom-image.html
+
+    // create the slippy map
+    var map = L.map('baru', {
+        minZoom: 1,
+        maxZoom: 6,
+        center: [0, 0],
+        zoom: 3.5,
+        crs: L.CRS.Simple
+    });
+
+    // dimensions of the image
+    var w = 761,
+        h = 381,
+        url = "<?php echo base_url('img/transport.png') ?>";
+    // calculate the edges of the image, in coordinate space
+    var southWest = map.unproject([0, h], map.getMaxZoom() - 1);
+    var northEast = map.unproject([w, 0], map.getMaxZoom() - 1);
+    var bounds = new L.LatLngBounds(southWest, northEast);
+    var marker = L.marker([-22, 13]).addTo(map);
+    var markerwit = L.marker([-29, 46]).addTo(map);
+    var markerwite = L.marker([-25, 33]).addTo(map);
+    var markerwita = L.marker([-23, 5]).addTo(map);
+    marker.bindPopup("<b>Laut Dangkalan Sunda</b><br>Meliput Laut Natuna bagian selatan, Selat Malaka bagian selatan, Selat Karimata, Laut Jawa, dan Selat Sunda").openPopup();
+    markerwita.bindPopup("<b>Laut- laut di antara Dua Kepulauan Berangkai</b><br> Laut ini berada di antara busur dalam dan busur luar dari sistem Pegunungan Sunda Alpina, biasa disebut interdeep. Laut di antara Pulau Sumatera dan Pulau Nias adalah rangkaian pulau- pulau di sebelah baratnya.").openPopup();
+    markerwit.bindPopup("<b>Laut Dangkalan Sahul</b><br>Laut Arafuru dan perluasannya ke arah selatan sampai Teluk Carpentaria di Australia merupakan kelompok perairan Dangkalan Sahul.").openPopup();
+    markerwite.bindPopup("<b>Laut Tengah</b><br>Kelompok perairan ini meliputi Selat Makassar, Laut Flores, Laut Banda, Laut Aru, Laut Seram, Laut Maluku, Laut Halmahera dan Laut Sulawesi").openPopup();
+
+    // add the image overlay, 
+    // so that it covers the entire map
+    L.imageOverlay(url, bounds).addTo(map);
+
+    // tell leaflet that the map is exactly as big as the image
+    map.setMaxBounds(bounds);
+</script>
