@@ -61,7 +61,7 @@ th,td{
 	var wil1 = L.marker([-8, 6]).addTo(map);
 	var wil2 = L.marker([-12, 9]).addTo(map);
 	
-	wil1.bindPopup("<b>WIB</b><br> Meliputi keseluruhan Pulau Jawa, Sumatera, Provinsi Kalimantan Barat dan Provinsi Kalimantan Tengah").openPopup();
+	wil1.bindPopup("<b>Wilayah Pembangunan Utama A</b><br> Meliputi keseluruhan Pulau Jawa, Sumatera, Provinsi Kalimantan Barat dan Provinsi Kalimantan Tengah").openPopup();
 
 
     // add the image overlay, 
