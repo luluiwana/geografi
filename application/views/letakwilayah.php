@@ -2,8 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
-	    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
    <style>
       .h3 {
       font-weight: bold;
