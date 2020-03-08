@@ -32,7 +32,6 @@
 
 
 <body>
-<<<<<<< HEAD
   <!-- container section start -->
   <section id="container" >
     <!--main content start-->

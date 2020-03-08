@@ -32,15 +32,13 @@
       <link href="<?php echo base_url('css/style-responsive.css') ?>" rel="stylesheet">
       <link href="<?php echo base_url('css/xcharts.min.css') ?>" rel=" stylesheet">
       <link href="<?php echo base_url('css/jquery-ui-1.10.4.min.css') ?>" rel="stylesheet">
-<<<<<<< HEAD
       <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
       <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 
-=======
 	       <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
 	    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 	  
->>>>>>> 6dde3c216da077ab25b77693d13c0d7ca396ca52
+
       <style>
         #materigeografi {
           color: white;
