@@ -52,7 +52,7 @@
       minZoom: 1,
       maxZoom: 4,
       center: [0, 0],
-      zoom: 7,
+      zoom: 3.5,
       crs: L.CRS.Simple
     });
 
