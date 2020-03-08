@@ -2,6 +2,8 @@
 
 <!DOCTYPE html>
 <html lang="en">
+     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
+	    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
    <style>
       .h3 {
       font-weight: bold;
@@ -24,7 +26,14 @@
       cursor: default;
       font-weight: bold;
       }
+	   #image-map {
+      width: 70%%;
+      height: 500px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
    </style>
+
    <body>
       <!-- container section start -->
       <section id="container">
@@ -38,8 +47,45 @@
                         <span class="label label-primary" style="18px">6&#176; LU - 11&#176; LS dan 95&#176; BT - 141&#176; BT</span>
                         <br>
                         <br>
-                        <div class="col-md-9" id=""> <img src="<?php echo base_url('img/zona-waktu.png')?>" class="img-responsive img-thumbnail" style="width:100%">
+                        <div class="col-md-9" id="image-map"> 
+						
                            <br>
+						       <script>
+    // Using leaflet.js to pan and zoom a big image.
+    // See also: http://kempe.net/blog/2014/06/14/leaflet-pan-zoom-image.html
+
+    // create the slippy map
+    var map = L.map('image-map', {
+      minZoom: 1,
+      maxZoom: 6,
+      center: [0, 0],
+      zoom: 3.5,
+      crs: L.CRS.Simple
+    });
+
+    // dimensions of the image
+    var w = 2000,
+        h = 1135,
+        url = "<?php echo base_url('img/zona-waktu.png') ?>";
+
+    // calculate the edges of the image, in coordinate space
+    var southWest = map.unproject([0, h], map.getMaxZoom()-1);
+    var northEast = map.unproject([w, 0], map.getMaxZoom()-1);
+    var bounds = new L.LatLngBounds(southWest, northEast);
+	var marker = L.marker([-20, 20]).addTo(map);
+	var markerwita = L.marker([-20, 35]).addTo(map);
+	var markerwit = L.marker([-20, 50]).addTo(map);
+	marker.bindPopup("<b>WIB</b><br> Meliputi keseluruhan Pulau Jawa, Sumatera, Provinsi Kalimantan Barat dan Provinsi Kalimantan Tengah").openPopup();
+	markerwita.bindPopup("<b>WITA</b><br> Meliputi Provinsi Kalimantan Timur, Kalimantan Barat, Provinsi Bali, NTB, NTT, dan seluruh Provinsi di Sulawesi").openPopup();
+	markerwit.bindPopup("<b>WIT</b><br> Meliputi seluruh provinsi di Papua, Maluku, dan Maluku Utara").openPopup();
+
+    // add the image overlay, 
+    // so that it covers the entire map
+    L.imageOverlay(url, bounds).addTo(map);
+
+    // tell leaflet that the map is exactly as big as the image
+    map.setMaxBounds(bounds);
+    </script>
                         </div>
                         <br>
                         <div class="col-md-3" id="">
@@ -167,13 +213,13 @@
                   </div>
                </div>
                <br/>
-               <div class="row" id="">
-                  <ul class="nav nav-tabs nav-justified"  style="position:floated; bottom:0;">
-                     <li class="active"><a data-toggle="tab" href="#home"><img class="img-responsive" src="<?php echo base_url('img/circle-yellow.png')?>" alt="" border="0"  width="20" height="" style="margin: 0 auto;" /><br>Letak Astronomis</a></li>
-                     <li><a data-toggle="tab" href="#menu1"><img class="img-responsive" src="<?php echo base_url('img/circle-green.png')?>" alt="" border="0"  width="20" height="" style="margin: 0 auto;" /><br>Letak Geografis</a></li>
-                     <li><a data-toggle="tab" href="#menu2"><img class="img-responsive" src="<?php echo base_url('img/circle-red.png')?>" alt="" border="0"  width="20" height="" style="margin: 0 auto;" /><br>Letak Geologis</a></li>
-                     <li><a data-toggle="tab" href="#menu3"><img class="img-responsive" src="<?php echo base_url('img/circle-blue.png')?>" alt="" border="0"  width="20" height="" style="margin: 0 auto;" /><br>Letak Sosial-Ekonomi</a></li>
-                     <li><a data-toggle="tab" href="#menu4"><img class="img-responsive" src="<?php echo base_url('img/circle-grey.png')?>" alt="" border="0"  width="20" height="" style="margin: 0 auto;" /><br>Letak Budaya</a></li>
+               <div class="row" id="" >
+                  <ul class="nav nav-tabs nav-justified"  style="position:floated; bottom:0;" >
+                     <li style="background-color:white" class="active"><a data-toggle="tab" href="#home"><img class="img-responsive" src="<?php echo base_url('img/circle-yellow.png')?>" alt="" border="0"  width="20" height="" style="margin: 0 auto;" /><br>Letak Astronomis</a></li>
+                     <li style="background-color:white"><a data-toggle="tab" href="#menu1"><img class="img-responsive" src="<?php echo base_url('img/circle-green.png')?>" alt="" border="0"  width="20" height="" style="margin: 0 auto;" /><br>Letak Geografis</a></li>
+                     <li style="background-color:white"><a data-toggle="tab" href="#menu2"><img class="img-responsive" src="<?php echo base_url('img/circle-red.png')?>" alt="" border="0"  width="20" height="" style="margin: 0 auto;" /><br>Letak Geologis</a></li>
+                     <li style="background-color:white"><a data-toggle="tab" href="#menu3"><img class="img-responsive" src="<?php echo base_url('img/circle-blue.png')?>" alt="" border="0"  width="20" height="" style="margin: 0 auto;" /><br>Letak Sosial-Ekonomi</a></li>
+                     <li style="background-color:white"><a data-toggle="tab" href="#menu4"><img class="img-responsive" src="<?php echo base_url('img/circle-grey.png')?>" alt="" border="0"  width="20" height="" style="margin: 0 auto;" /><br>Letak Budaya</a></li>
                   </ul>
                </div>
             </section>

@@ -1,7 +1,7 @@
     <!DOCTYPE html>
 
     <head>
-      <title>Home</title>
+      <title>IndiGeo</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="Belajar Geografi">
@@ -32,10 +32,11 @@
       <link href="<?php echo base_url('css/style-responsive.css') ?>" rel="stylesheet">
       <link href="<?php echo base_url('css/xcharts.min.css') ?>" rel=" stylesheet">
       <link href="<?php echo base_url('css/jquery-ui-1.10.4.min.css') ?>" rel="stylesheet">
+	  
       <style>
         #materigeografi {
           color: white;
-          font-size: 20px;
+          font-size: 18px;
           height: 60px;
           padding-top: 13px;
           padding-left: 13px;
@@ -72,6 +73,7 @@
           </div>
           <!--logo start-->
           <!-- <a href="index.html" class="logo">Belajar <span class="lite">Geografi</span></a> -->
+		  <h3>IndiGeo</h3>
           <!--logo end-->
         </header>
 

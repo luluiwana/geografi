@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
 <style>
    .h3 {
       font-weight: bold;
@@ -25,7 +27,13 @@
       cursor: default;
       font-weight: bold;
    }
-</style>
+    #image-map {
+      width: 100%;
+      height: 600px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+</style></head>
 
 <body>
    <!-- container section start -->
@@ -39,11 +47,11 @@
                   <div class="deskripsi" panel>
 
                      <br>
-                     <div class="col-md-9" id=""> <img src="<?php echo base_url('img/potensi-laut.png') ?>" class="img-responsive img-thumbnail" style="width:100%">
-                        <br>
+                     <div class="col-md-12"  id="image-map"> 
+                        <br><br/>
                      </div>
                      <br>
-                     <div class="col-md-3" id="">
+                     <div class="col-md-12" id="">
                         <table class="table">
                            <tr align="left" valign="top">
 
@@ -56,6 +64,41 @@
 
                         </table>
                      </div>
+					 
+
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script>
+    // Using leaflet.js to pan and zoom a big image.
+    // See also: http://kempe.net/blog/2014/06/14/leaflet-pan-zoom-image.html
+
+    // create the slippy map
+    var map = L.map('image-map', {
+      minZoom: 1,
+      maxZoom: 6,
+      center: [0, 0],
+      zoom: 2,
+      crs: L.CRS.Simple
+    });
+
+    // dimensions of the image
+    var w = 2000,
+        h = 1135,
+        url = "<?php echo base_url('img/Peta_Ekoregion_INA_Darat_Laut.jpg') ?>";
+
+    // calculate the edges of the image, in coordinate space
+    var southWest = map.unproject([0, h], map.getMaxZoom()-1);
+    var northEast = map.unproject([w, 0], map.getMaxZoom()-1);
+    var bounds = new L.LatLngBounds(southWest, northEast);
+	//var marker = L.marker([51.5, -0.09]).addTo(map);
+	//marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+
+    // add the image overlay, 
+    // so that it covers the entire map
+    L.imageOverlay(url, bounds).addTo(map);
+
+    // tell leaflet that the map is exactly as big as the image
+    map.setMaxBounds(bounds);
+    </script>
                   </div>
                </div>
                <div id="menu1" class="tab-pane fade">
@@ -188,19 +231,17 @@
                      </div>
                   </div>
                
-               <br />
                <div class="row" id="">
                   <ul class="nav nav-tabs nav-justified" style="position:floated; bottom:0;">
-                     <li class="active"><a data-toggle="tab" href="#home"><img class="img-responsive" src="<?php echo base_url('img/circle-yellow.png') ?>" alt="" border="0" width="20" height="" style="margin: 0 auto;" /><br>Potensi Laut Indonesia</a></li>
-                     <li><a data-toggle="tab" href="#menu1"><img class="img-responsive" src="<?php echo base_url('img/circle-green.png') ?>" alt="" border="0" width="20" height="" style="margin: 0 auto;" /><br> Potensi Perikanan Indonesia</a></li>
-                     <li><a data-toggle="tab" href="#menu2"><img class="img-responsive" src="<?php echo base_url('img/circle-red.png') ?>" alt="" border="0" width="20" height="" style="margin: 0 auto;" /><br>Potensi Tumbuhan Laut</a></li>
-                     <li><a data-toggle="tab" href="#menu3"><img class="img-responsive" src="<?php echo base_url('img/circle-blue.png') ?>" alt="" border="0" width="20" height="" style="margin: 0 auto;" /><br>Potensi Mineral dan Penambangan</a></li>
-                     <li><a data-toggle="tab" href="#menu4"><img class="img-responsive" src="<?php echo base_url('img/circle-grey.png') ?>" alt="" border="0" width="20" height="" style="margin: 0 auto;" /><br>Potensi Wisata Bahari</a></li>
+                     <li style="background-color:white" class="active"><a data-toggle="tab" href="#home"><img class="img-responsive" src="<?php echo base_url('img/circle-yellow.png') ?>" alt="" border="0" width="20" height="" style="margin: 0 auto;" /><br>Potensi Laut Indonesia</a></li>
+                     <li style="background-color:white"><a data-toggle="tab" href="#menu1"><img class="img-responsive" src="<?php echo base_url('img/circle-green.png') ?>" alt="" border="0" width="20" height="" style="margin: 0 auto;" /><br> Potensi Perikanan Indonesia</a></li>
+                     <li style="background-color:white"><a data-toggle="tab" href="#menu2"><img class="img-responsive" src="<?php echo base_url('img/circle-red.png') ?>" alt="" border="0" width="20" height="" style="margin: 0 auto;" /><br>Potensi Tumbuhan Laut</a></li>
+                     <li style="background-color:white"><a data-toggle="tab" href="#menu3"><img class="img-responsive" src="<?php echo base_url('img/circle-blue.png') ?>" alt="" border="0" width="20" height="" style="margin: 0 auto;" /><br>Potensi Mineral dan Penambangan</a></li>
+                     <li style="background-color:white"><a data-toggle="tab" href="#menu4"><img class="img-responsive" src="<?php echo base_url('img/circle-grey.png') ?>" alt="" border="0" width="20" height="" style="margin: 0 auto;" /><br>Potensi Wisata Bahari</a></li>
                   </ul>
                </div>
          </section>
-         <div class="text-right">
-         </div>
+        
       </section>
       <!--main content end-->
    </section>
