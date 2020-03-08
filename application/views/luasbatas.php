@@ -7,6 +7,13 @@
 		padding-right: 30px;
 	}
 
+	#image-map {
+		width: 100%;
+		height: 500px;
+		border: 1px solid #ccc;
+		margin-bottom: 10px;
+	}
+
 	p {
 		text-indent: 30px;
 		text-align: justify
@@ -116,10 +123,49 @@
 							<td>Zona Ekonomi Eksklusif (ZEE), batas ZEE untuk negara maritim sampai pada jarak 200 mil. Pada kawasan ini negara Indonesia berhak memanfaatkan segala potensi sumber daya alam baik di laut, di dasarnya maupun di bawah dasar laut. </td>
 						</tr>
 					</table>
-					<img src="<?php echo base_url('img/bataslaut.png') ?>" class="img-responsive img-thumbnail" /><br /><br />
+					<div id="image-map" class='center'>
+					</div>
+
 					<div class="label label-primary">Pembaruan Peta NKRI terkait ZEE</div><br /><br />
 					<p>Kementerian Koordinator Bidang Kemaritiman melakukan pembaruan peta Negara Kesatuan Republik Indonesia (NKRI). Poin pembaruan di antaranya menyangkut batas zona ekonomi eksklusif (ZEE). Sebelum peta baru tersebut diluncurkan, sebelumnya terdapat perjanjian perbatasan terlebih dahulu yang ditandatangani oleh kedua belah negara, yaitu Indonesia dan Singapura. Selain itu, ada juga perjanjian batas maritim antara Indonesia dan Filipina. </p>
 				</div>
+
+
+				<script>
+					// Using leaflet.js to pan and zoom a big image.
+					// See also: http://kempe.net/blog/2014/06/14/leaflet-pan-zoom-image.html
+
+					// create the slippy map
+					var map = L.map('image-map', {
+						minZoom: 1,
+						maxZoom: 6,
+						center: [0, 0],
+						zoom: 3.5,
+						crs: L.CRS.Simple
+					});
+
+					// dimensions of the image
+					var w = 2632,
+						h = 1300,
+						url = "<?php echo base_url('img/bataslaut.png') ?>";
+					// calculate the edges of the image, in coordinate space
+					var southWest = map.unproject([0, h], map.getMaxZoom() - 1);
+					var northEast = map.unproject([w, 0], map.getMaxZoom() - 1);
+					var bounds = new L.LatLngBounds(southWest, northEast);
+					var marker = L.marker([-8, 14.8]).addTo(map);
+					var markerwit = L.marker([-10, 30]).addTo(map);
+					var markerwita = L.marker([-12, 3]).addTo(map);
+					marker.bindPopup("<b>Zona Ekonomi Eksklusif (ZEE)</b><br> Batas ZEE untuk negara maritim sampai pada jarak 200 mil. Pada kawasan ini negara Indonesia berhak memanfaatkan segala¬ potensi sumber daya alam baik di laut, di dasarnya maupun di bawah dasar laut").openPopup();
+					markerwita.bindPopup("<b>Batas Landas Kontinen</b><br> Indonesia terletak pada 2 landas kontinen yaitu Asia (termasuk Dangkalan Sunda) dan Australia (termasuk Dangkalan Sahul) sampai kedalaman 100 m atau lebih dalam. Batas landas kontinen ditetapkan dari garis dasar ke arah laut terbuka paling jauh 200 mil").openPopup();
+					markerwit.bindPopup("<b>Batas Laut Teritorial</b><br>Ditarik dari sebuah garis dasar dengan jarak 12 mil ke arah lautan bebas. Garis dasar tersebut menghubungkan titik- titik dari ujung terluar pulau dan tidak boleh melebihi 200 mil.").openPopup();
+
+					// add the image overlay, 
+					// so that it covers the entire map
+					L.imageOverlay(url, bounds).addTo(map);
+
+					// tell leaflet that the map is exactly as big as the image
+					map.setMaxBounds(bounds);
+				</script>
 
 
 				<div class="row" id="">
@@ -170,43 +216,6 @@
 		<!--main content end-->
 	</section>
 	<!-- container section start -->
-	<script>
-		// Using leaflet.js to pan and zoom a big image.
-		// See also: http://kempe.net/blog/2014/06/14/leaflet-pan-zoom-image.html
-
-		// create the slippy map
-		var map = L.map('image-map', {
-			minZoom: 1,
-			maxZoom: 6,
-			center: [0, 0],
-			zoom: 3.5,
-			crs: L.CRS.Simple
-		});
-
-		// dimensions of the image
-		var w = 2000,
-			h = 1135,
-			url = "<?php echo base_url('img/bataslaut.png') ?>";
-
-		// calculate the edges of the image, in coordinate space
-		var southWest = map.unproject([0, h], map.getMaxZoom() - 1);
-		var northEast = map.unproject([w, 0], map.getMaxZoom() - 1);
-		var bounds = new L.LatLngBounds(southWest, northEast);
-		var marker = L.marker([-20, 20]).addTo(map);
-		var markerwita = L.marker([-20, 35]).addTo(map);
-		var markerwit = L.marker([-20, 50]).addTo(map);
-		marker.bindPopup("<b>WIB</b><br> Meliputi keseluruhan Pulau Jawa, Sumatera, Provinsi Kalimantan Barat dan Provinsi Kalimantan Tengah").openPopup();
-		markerwita.bindPopup("<b>WITA</b><br> Meliputi Provinsi Kalimantan Timur, Kalimantan Barat, Provinsi Bali, NTB, NTT, dan seluruh Provinsi di Sulawesi").openPopup();
-		markerwit.bindPopup("<b>WIT</b><br> Meliputi seluruh provinsi di Papua, Maluku, dan Maluku Utara").openPopup();
-
-		// add the image overlay, 
-		// so that it covers the entire map
-		L.imageOverlay(url, bounds).addTo(map);
-
-		// tell leaflet that the map is exactly as big as the image
-		map.setMaxBounds(bounds);
-	</script>
-
 
 
 </body>
