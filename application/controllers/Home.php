@@ -32,7 +32,7 @@ class Home extends CI_Controller
 	public function luasbatas()
 	{
 		$this->load->view('header');
-		$this->load->view('luasbatas');
+		$this->load->view('luaswilayah');
 	}
 	public function bentukwilayah()
 	{

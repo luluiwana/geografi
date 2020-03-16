@@ -17,6 +17,7 @@
       <!-- font icon -->
       <link href="<?php echo base_url('css/elegant-icons-style.css') ?>" rel="stylesheet" />
       <link href="<?php echo base_url('css/font-awesome.min.css') ?>" rel="stylesheet" />
+      <link href="<?php echo base_url('css/font-awesome.css') ?>" rel="stylesheet" />
       <!-- full calendar css-->
       <link href="<?php echo base_url('assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css') ?>" rel="stylesheet" />
       <link href="<?php echo base_url('assets/fullcalendar/fullcalendar/fullcalendar.css') ?>" rel="stylesheet" />
@@ -32,6 +33,7 @@
       <link href="<?php echo base_url('css/style-responsive.css') ?>" rel="stylesheet">
       <link href="<?php echo base_url('css/xcharts.min.css') ?>" rel=" stylesheet">
       <link href="<?php echo base_url('css/jquery-ui-1.10.4.min.css') ?>" rel="stylesheet">
+	  
       <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
       <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 

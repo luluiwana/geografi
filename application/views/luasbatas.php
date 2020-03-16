@@ -85,28 +85,7 @@
 						</tr>
 					</table>
 					<div class="label label-primary">Batas Negara Kesatuan Republik Indonesia</div><br /><br />
-					<p>
-						Negara Indonesia memiliki batas negara di daratan dan lautan. Posisi Indonesia berbatasan dengan negara tetangga yaitu:
-						<table class="table table-condensed table-hover">
-							<tr>
-								<td>Utara</td>
-								<td>Negara Malaysia, Singapura, Filipina, Laut Cina Selatan</td>
-							</tr>
-							<tr>
-								<td>Selatan</td>
-								<td>Australia dan Samudera Hindia</td>
-							</tr>
-							<tr>
-								<td>Barat</td>
-								<td>Samudera Hindia</td>
-							</tr>
-							<tr>
-								<td>Timur</td>
-								<td>Papua Nugini, Timor Leste dan Samudera Pasifik</td>
-							</tr>
-
-						</table>
-					</p>
+					
 
 					<p>Berdasarkan Hukum Laut Internasional yang disepakati oleh PBB tahun 1980, batas laut Indonesia dan negara- negara lain terdiri dari 3 batas, yakni: </p>
 					<table class="table table-hover">
