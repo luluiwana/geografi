@@ -38,12 +38,75 @@
     <section id="main-content" >
       <section class="wrapper" >
 	
-		<h2>BENTUK WILAYAH INDONESIA</h2><br/>
+		<div style="text-align:center"><h2>BENTUK WILAYAH INDONESIA</h2><br/></div>
 
-		<div class="col-md-8" >
+		<div class="col-md-12" >
+		<section class="panel">
+                                    <header class="panel-heading">
+                                        <i class="fa fa-flag"></i>Pembagian Wilayah Pembangunan
+                                    </header>
+                                    <div class="panel-body" >
+<div id="image-map" style="background-color:white">
+		 
+	</div>
+                                    </div>
+                                </section>
 		
-		<div id="image-map">
-		 <script>
+
+		
+
+		</div>
+		<div class="col-md-12" >
+		<section class="panel">
+                                    <header class="panel-heading">
+                                        <i class="fa fa-info"></i>Informasi
+                                    </header>
+                                    <div class="panel-body" >
+<p>Jika dilihat dari morfologi daratan, negara ini berbentuk kepulauan tepencar (fragmented). Apabila semua laut didalamnya dimasukkan sebagai apa yang tercantum dalam wawasan nusantara, maka bentuknya berubah menjadi kompak. Karena sebagian besar wilayah berupa laut untuk mempercepat pemerataan, pembangunan wilayah di Indonesia dibagi menjadi 4.</p>
+		<table class="table table-responsive table-hover">
+
+	<tr >
+		<td>a.</td>
+		<td>Wilayah Pembangunan Utama A, Pusat Kota Medan mencakup: Wil. Pembangunan I: Aceh dan Sumatera Utara dan II: Sumatera Barat, Riau, dan Kep. Riau</td>
+	</tr>
+	<tr >
+		<td>b.</td>
+		<td>Wilayah Pembangunan Utama B, Pusat Kota Jakarta mencakup: Wil. Pembangunan III: Jambi, Sumatera Selatan, Bengkulu, Bangka Belitung IV: Lampung, Banten, Jakarta, Jawa Barat, Jawa Tengah dan Yogyakarta dan VI: Kalimantan Barat</td>
+	</tr>
+	<tr >
+		<td>c.</td>
+		<td>Wilayah Pembangunan Utama C, Pusat Kota Surabaya mencakup: Wil. Pembangunan V: Jawa Timur, Bali dan VII: Kalimantan Tengah, Kalimantan Selatan, Kalimantan Timur, Kalimantan Utara</td>
+	</tr><tr >
+		<td>d.</td>
+		<td>Wilayah Pembangunan Utama D, Pusat Kota Makassar mencakup: Wil. Pembangunan VIII: NTB, NTT, Sulawesi Selatan, Sulawesi Tenggara; IX: Sulawesi Tengah, Sulawsi Barat, Sulawesi Tenggara dan X: Maluku, Maluku Utara, Papua Barat, Papua.</td>
+	</tr>
+</table>
+                                    </div>
+                                </section>
+		
+		
+
+		</div>
+		<div class="col-md-4" id="">
+
+
+
+		
+		
+
+      </section>
+      <div class="text-right">
+        
+      </div>
+    </section>
+    <!--main content end-->
+  </section>
+  <!-- container section start -->
+
+ 
+
+</body>
+<script>
     // Using leaflet.js to pan and zoom a big image.
     // See also: http://kempe.net/blog/2014/06/14/leaflet-pan-zoom-image.html
 
@@ -52,7 +115,7 @@
       minZoom: 1,
       maxZoom: 4,
       center: [0, 0],
-      zoom: 3.5,
+      zoom: 4,
       crs: L.CRS.Simple
     });
 
@@ -96,46 +159,6 @@
     // tell leaflet that the map is exactly as big as the image
     map.setMaxBounds(bounds);
     </script>
-	</div>
-		<br/><br/>
-		<p>Jika dilihat dari morfologi daratan, negara ini berbentuk kepulauan tepencar (fragmented). Apabila semua laut didalamnya dimasukkan sebagai apa yang tercantum dalam wawasan nusantara, maka bentuknya berubah menjadi kompak. Karena sebagian besar wilayah berupa laut untuk mempercepat pemerataan, pembangunan wilayah di Indonesia dibagi menjadi 4.</p>
-
-		</div>
-		<div class="col-md-4" id="">
-		<table class="table table-responsive table-hover">
-
-	<tr >
-		<td>a.</td>
-		<td>Wilayah Pembangunan Utama A, Pusat Kota Medan mencakup: Wil. Pembangunan I: Aceh dan Sumatera Utara dan II: Sumatera Barat, Riau, dan Kep. Riau</td>
-	</tr>
-	<tr >
-		<td>b.</td>
-		<td>Wilayah Pembangunan Utama B, Pusat Kota Jakarta mencakup: Wil. Pembangunan III: Jambi, Sumatera Selatan, Bengkulu, Bangka Belitung IV: Lampung, Banten, Jakarta, Jawa Barat, Jawa Tengah dan Yogyakarta dan VI: Kalimantan Barat</td>
-	</tr>
-	<tr >
-		<td>c.</td>
-		<td>Wilayah Pembangunan Utama C, Pusat Kota Surabaya mencakup: Wil. Pembangunan V: Jawa Timur, Bali dan VII: Kalimantan Tengah, Kalimantan Selatan, Kalimantan Timur, Kalimantan Utara</td>
-	</tr><tr >
-		<td>d.</td>
-		<td>Wilayah Pembangunan Utama D, Pusat Kota Makassar mencakup: Wil. Pembangunan VIII: NTB, NTT, Sulawesi Selatan, Sulawesi Tenggara; IX: Sulawesi Tengah, Sulawsi Barat, Sulawesi Tenggara dan X: Maluku, Maluku Utara, Papua Barat, Papua.</td>
-	</tr>
-</table>
-
-
-		</div>
-		
-
-      </section>
-      <div class="text-right">
-        
-      </div>
-    </section>
-    <!--main content end-->
-  </section>
-  <!-- container section start -->
-
- 
-
-</body>
 
 </html>
+

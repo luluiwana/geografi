@@ -273,7 +273,7 @@
                                         <i class="fa fa-globe"></i>
                                     </header>
                                     <div class="panel-body">
-                                        <img src="<?php echo base_url('img/letak-budaya.jpg') ?>" class="img-responsive img-thumbnail" style="height:80%">
+                                        <img src="<?php echo base_url('img/letak-budaya.jpg') ?>" class="img-responsive img-thumbnail">
                                     </div>
                                 </section>
 
