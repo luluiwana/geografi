@@ -137,7 +137,15 @@
                   <li><a href="<?php echo base_url('home/transportasilaut') ?>" class="submenu">Transportasi Laut Indonesia</a></li>
                   <li><a href="<?php echo base_url('home/tollaut') ?>" class="submenu">TOL Laut Indonesia</a></li>
                 </ul>
-              </li>;
+              </li>
+			   <li class="sub-menu">
+                <a href="<?php echo base_url('home/pustaka') ?>" class="">
+                  <img src="<?php echo base_url('img/book.png') ?>" class="ikon-sidebar" />
+                  <span class="side">Daftar Pustaka</span>
+                 
+                </a>
+               
+              </li>
             </ul>
             <!-- sidebar menu end-->
           </div>

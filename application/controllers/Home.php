@@ -65,4 +65,9 @@ class Home extends CI_Controller
 		$this->load->view('header');
 		$this->load->view('tol_laut');
 	}
+		public function pustaka()
+	{
+		$this->load->view('header');
+		$this->load->view('pustaka');
+	}
 }

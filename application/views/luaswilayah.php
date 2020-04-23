@@ -32,6 +32,11 @@
         border: 1px solid #ccc;
         margin-bottom: 10px;
     }
+	    #image-timeline {
+        height: 400px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
 	
 </style>
 
@@ -54,7 +59,7 @@
                                     <header class="panel-heading">
                                         <i class="fa fa-flag"></i>Perkembangan Perairan Laut Indonesia
                                     </header>
-                                    <div class="panel-body" id="image-maps" style="background-color:white">
+                                    <div class="panel-body" id="image-timeline" style="background-color:white">
 
                                     </div>
                                 </section>
@@ -319,4 +324,36 @@
 
 					// tell leaflet that the map is exactly as big as the image
 					map.setMaxBounds(bounds);
+					
+					var timeline = L.map('image-timeline', {
+						minZoom: 1,
+						maxZoom: 6,
+						center: [0, 0],
+						zoom: 4.5,
+						crs: L.CRS.Simple
+					});
+
+					// dimensions of the image
+					var w = 957,
+						h = 397
+						url = "<?php echo base_url('img/timeline.png') ?>";
+					// calculate the edges of the image, in coordinate space
+					var southWest = timeline.unproject([0, h], timeline.getMaxZoom() - 1);
+					var northEast = timeline.unproject([w, 0], timeline.getMaxZoom() - 1);
+					var bounds = new L.LatLngBounds(southWest, northEast);
+					
+					var pbb = L.marker([-7.3, 21.7]).addTo(timeline);
+					var tzmko = L.marker([-7.3, 5.5]).addTo(timeline);
+					var marker = L.marker([-7.3, 13.5]).addTo(timeline);
+					
+					tzmko.bindPopup("<b>(TZMKO), 1939. </b><br> Hukum laut produk zaman Hindia Belanda. Batas wilayah teritorial laut Indonesia sebesar 3 mil (4,8 km) dari garis pantai. Jadi sebagian besar perairan yang berada di antara pulau-pulau di Indonesia itu merupakan perairan internasional.").openPopup();
+					pbb.bindPopup("<b>Deklarasi Juanda, 1957</b><br>Deklarasi Juanda, dicetuskan 13 Desember 1957. batas wilayah laut teritorial berjarak 3 mil menjadi 12 mil. Jarak tersebut diukur dari garis yang menghubungkan titik-titik ujung terluar pada pulau-pulau terluar dari wilayah negara Indonesia pada saat air laut surut. Disahkan dalam UU No. 4/PRP/Tahun 1960 tentang Perairan Indonesia. wilayah laut Indonesia yang semula 1 juta km2menjadi 3,1 juta km2.").openPopup();
+					marker.bindPopup("<b>UNCLOS, 1982</b><br> Pada Pertemuan Konvensi Hukum Laut PBB ke-3 UNCLOS, 10 Desember 1982, konsep Wawasan Nusantara akhirnya diakui dunia sebagai The Archipelagic Nation Concept. ditetapkan laut teritorial negara kepulauan adalah selebar 12 mil dari garis dasar (base line) terluar pulau-pulau dan ZEE selebar 200 mil dari dari garis dasar. Melalui UNCLOS 1982 luas lautmenjadi 5,8 juta km2 yang terdiri dari laut teritorial dan perairan pedalaman seluas 3,1 juta km2 dan ZEE seluas 2,7 juta km2. UNCLOS 1982 ini kemudian diratifikasi Indonesia melalui UU No. 17 tahun 1983.").openPopup();
+
+					// add the image overlay, 
+					// so that it covers the entire timeline
+					L.imageOverlay(url, bounds).addTo(timeline);
+
+					// tell leaflet that the timeline is exactly as big as the image
+					timeline.setMaxBounds(bounds);
 				</script>

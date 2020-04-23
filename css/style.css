@@ -7706,7 +7706,7 @@ color: #fff;
 
 .tab-bg-primary {
 
-    background: #688a7e;
+    background: ##10253f;
 
     border-bottom: none;
 
@@ -7758,7 +7758,7 @@ color: #fff;
 
 .panel-heading .nav > li.active > a, .panel-heading .nav > li > a:hover {
 
-    color: #688a7e;
+    color: black;
 
     background: #fff;
 
